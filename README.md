@@ -1,1 +1,1 @@
-# Welcome to the sasean repository 🦁
+# Welcome to the saean repository 🦁
