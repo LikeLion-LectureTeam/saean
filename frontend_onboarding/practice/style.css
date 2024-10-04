@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif; 
+  }
+  
+
+  p {
+    font-size: 40px; 
+  }
+  
+  .open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    font-variation-settings: "wdth" 100; 
+  }
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  
