@@ -21,8 +21,8 @@ This repository contains the following design documents and wireframes:
 - `target_persona.pdf`: Detailed user persona representing the target audience for the app, including needs and behaviors.
 - `interview.pdf`: Interview questions and results regarding recycling habits and the difficulties users face.
 - `golden_circle.pdf`: Provides the core vision and motivation for the app based on the Golden Circle framework.
-- `wire_frame_basic.pdf`: A basic wireframe demonstrating the app's structure and layout, focusing on core functionality&#8203;:contentReference[oaicite:0]{index=0}.
-- `wire_frame.pdf`: High-fidelity wireframe providing detailed screens for the app's design, including user flows, UI/UX elements, and functionality&#8203;:contentReference[oaicite:1]{index=1}.
+- `wire_frame_basic.pdf`: A basic wireframe demonstrating the app's structure and layout, focusing on core functionality.
+- `wire_frame.pdf`: High-fidelity wireframe providing detailed screens for the app's design, including user flows, UI/UX elements, and functionality.
 
 ## Wireframe Features (from `wire_frame.pdf`):
 - **Carbon Emission Reduction**: Shows the amount of carbon emissions saved by the user's recycling efforts.
