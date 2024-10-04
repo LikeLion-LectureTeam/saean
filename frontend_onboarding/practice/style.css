@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* 기본 폰트 사이즈 */
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif; /* 폰트 패밀리 설정 */
+  }
+  
+
+  p {
+    font-size: 40px; /* 텍스트 크기 */
+  }
+  
+  .open-sans {
+    font-family: "Open Sans", sans-serif; /* 지정된 폰트 패밀리 */
+    font-optical-sizing: auto;
+    font-weight: 400; /* 텍스트 굵기 */
+    font-style: normal;
+    font-variation-settings: "wdth" 100; /* 글꼴 설정 */
+  }
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  
