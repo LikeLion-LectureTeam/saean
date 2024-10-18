@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-pink-100 text-gray-900">
+    <section class="flex flex-col items-center justify-center min-h-screen">
+      <h1
+        class="text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-red-300 to-yellow-300 mt-32 mb-12 drop-shadow-lg tracking-wider"
+      >
+        SAEAN PAGE
+      </h1>
+
+      <div class="relative mt-12">
+        <img
+          src="./image.png"
+          alt="Profile Image"
+          class="rounded-full w-56 h-56 mx-auto shadow-lg border-4 border-gray-300 transform transition-transform duration-500 hover:scale-105"
+        />
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-2xl font-semibold">Saean</p>
+        <p class="text-lg font-light mt-2 text-gray-600">Likelion Member</p>
+      </div>
+
+      <div class="mt-10 flex space-x-8">
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out shadow-md flex items-center space-x-2"
+        >
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="#"
+          class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out shadow-md flex items-center space-x-2"
+        >
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div
+        class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-12 px-8 w-full max-w-screen-lg"
+      >
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <h3 class="text-lg font-bold mb-2">프로젝트 1</h3>
+          <p class="text-gray-600">아자아자</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <h3 class="text-lg font-bold mb-2">프로젝트 2</h3>
+          <p class="text-gray-600">아자자</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <h3 class="text-lg font-bold mb-2">프로젝트 3</h3>
+          <p class="text-gray-600">할 수 있다</p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center text-sm text-gray-600 italic">
+        <p>파이팅</p>
+      </div>
+
+      <footer class="w-full mt-20 bg-gray-500 text-white py-6">
+        <div class="text-center text-sm">
+          <p>&copy; 2024 Saean Page</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
