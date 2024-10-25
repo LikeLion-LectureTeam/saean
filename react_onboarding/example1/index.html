@@ -1,0 +1,117 @@
+<!-- 카드 모서리와 그림자: .product-card에서 border-radius를 20px로, box-shadow를 더 강하게 조정
+제목 스타일: .title에 텍스트 그림자를 추가하고 폰트 크기를 2.8rem로 키움
+버튼의 크기 (padding)와 모서리 둥글기 (border-radius)를 키우고 호버 시 색상이 바뀌고 크기가 살짝 커지는 효과 (transform: scale(1.05))를 추가 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card UI</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="style/app.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const data = [
+        {
+          id: 1,
+          productName: "김치볶음",
+          price: 7000,
+          stockCount: 100,
+          thumbnailImg: "./image/1.png",
+        },
+        {
+          id: 2,
+          productName: "갈비탕",
+          price: 12000,
+          stockCount: 1000,
+          thumbnailImg: "./image/2.png",
+        },
+        {
+          id: 3,
+          productName: "백종원 마라소스",
+          price: 15000,
+          stockCount: 0,
+          thumbnailImg: "./image/3.png",
+        },
+        {
+          id: 4,
+          productName: "마라탕 밀키트",
+          price: 20000,
+          stockCount: 100,
+          thumbnailImg: "./image/4.png",
+        },
+        {
+          id: 5,
+          productName: "까르보 불닭",
+          price: 4000,
+          stockCount: 230,
+          thumbnailImg: "./image/5.png",
+        },
+        {
+          id: 6,
+          productName: "김치볶음밥 밀키트",
+          price: 5000,
+          stockCount: 1000,
+          thumbnailImg: "./image/6.png",
+        },
+      ];
+
+      const ProductCard = ({ product }) => {
+        const { productName, price, stockCount, thumbnailImg } = product;
+
+        return (
+          <div className="product-card">
+            <img src={thumbnailImg} alt={productName} className="product-img" />
+            <div className="product-info">
+              <h3 className="product-name">{productName}</h3>
+              <div className="product-price">
+                <span className="price">{price.toLocaleString()}원</span>
+              </div>
+              <div className="button-group">
+                <button className="like-btn"> ♥ 찜하기 </button>
+                <button className="cart-btn" disabled={stockCount === 0}>
+                  {stockCount > 0 ? "장바구니에 담기" : "재고 없음"}
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      };
+
+      const ProductList = ({ products }) => {
+        return (
+          <div className="product-list">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        );
+      };
+
+      const App = () => {
+        return (
+          <div>
+            <h1 className="title">새안 마켓</h1>
+            <ProductList products={data} />
+          </div>
+        );
+      };
+
+      const rootElement = document.getElementById("root");
+      const root = ReactDOM.createRoot(rootElement);
+      root.render(<App />);
+    </script>
+  </body>
+</html>

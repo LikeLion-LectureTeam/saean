@@ -1,0 +1,125 @@
+:root {
+    --main-color: #ff7f50; /* Coral color for a fresher look */
+    --txt-color: #333333;
+    --border-color: #c4c4c4;
+    --bg-color: #f0f0f0;
+    --button-bg-color: #48c774; /* Green for the cart button */
+    --button-hover-color: #3dbb63;
+    --button-like-color: #ffdd57; /* Golden yellow for the like button */
+    --button-like-hover-color: #e6c547;
+  }
+  
+  body {
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .title {
+    margin: 20px 0;
+    font-size: 2.8rem;
+    color: var(--main-color);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .product-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--txt-color);
+  }
+  
+  .product-price {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .price {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: bold;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .like-btn {
+    background-color: var(--button-like-color);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    flex: 1;
+    margin-right: 5px;
+  }
+  
+  .like-btn:hover {
+    background-color: var(--button-like-hover-color);
+    transform: scale(1.05);
+  }
+  
+  .cart-btn {
+    background-color: var(--button-bg-color);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    flex: 1;
+  }
+  
+  .cart-btn:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+  }
+  
+  .cart-btn[disabled] {
+    background-color: var(--border-color);
+    cursor: not-allowed;
+  }
+  
