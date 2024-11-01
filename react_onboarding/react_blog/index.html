@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 블로그</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/category.css" />
+    <link rel="stylesheet" href="./css/author.css" />
+    <link rel="stylesheet" href="./css/post.css" />
+    <link rel="stylesheet" href="./css/posts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="max-width">
+        <h1>
+          <a href="./">
+            <img src="./assets/Logo.svg" alt="내 블로그" />
+          </a>
+        </h1>
+        <ul>
+          <li class="profile-img">
+            <a href="#">
+              <img src="./images/profile.JPG" alt="내 페이지" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button">
+              <img src="./assets/icon-modify-white.svg" alt="" />
+              <span>글쓰기</span>
+            </a>
+          </li>
+          <li>
+            <button class="button white">
+              <img src="./assets/icon-logout.svg" alt="" />
+              <span>로그아웃</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="max-width">
+        <div class="banner-contents">
+          <p class="sub-text">리액트 블로그</p>
+          <p class="main-text">새안 블로그</p>
+          <p class="description">내 블로그에 오신 것을 환영합니다</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="max-width">
+        <h2 class="a11y-hidden">포스트</h2>
+        <ul class="posts">
+          <li>
+            <a href="post-view.html" class="post">
+              <article>
+                <img src="./images/post-img1.jpeg" alt="" />
+                <div class="contents-wrap">
+                  <dl class="category">
+                    <dt class="a11y-hidden">카테고리</dt>
+                    <dd>생활</dd>
+                    <dd>스타일</dd>
+                  </dl>
+                  <h3>자기소개</h3>
+                  <dl class="author-wrap">
+                    <dt class="a11y-hidden">작성자</dt>
+                    <dd class="author">
+                      <img src="./images/profile.JPG" alt="" />새안
+                    </dd>
+                    <dt class="a11y-hidden">작성일</dt>
+                    <dd class="created">2024.11.01</dd>
+                  </dl>
+                  <p class="post-description">
+                    내 블로그에 오신 것을 환영합니다
+                  </p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="post-view.html" class="post">
+              <article>
+                <img src="./images/post-img2.jpeg" alt="" />
+                <div class="contents-wrap">
+                  <dl class="category">
+                    <dt class="a11y-hidden">카테고리</dt>
+                    <dd>생활</dd>
+                    <dd>스타일</dd>
+                  </dl>
+                  <h3>멍멍이</h3>
+                  <dl class="author-wrap">
+                    <dt class="a11y-hidden">작성자</dt>
+                    <dd class="author">
+                      <img src="./images/profile.JPG" alt="" /> 새안
+                    </dd>
+                    <dt class="a11y-hidden">작성일</dt>
+                    <dd class="created">2024.10.25</dd>
+                  </dl>
+                  <p class="post-description">저의 귀여운 멍멍이</p>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+
+        <aside class="about">
+          <h2>나에 대해</h2>
+          <img src="./images/profile.jpg" alt="" class="user-profile" />
+          <p class="user-name">새안</p>
+          <p class="user-description">안녕하세요! 저는 새안이에요.</p>
+          <h3>카테고리</h3>
+          <ul class="categories">
+            <li><a href="#">생활</a></li>
+            <li><a href="#">스타일</a></li>
+            <li><a href="#">기술</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">사진</a></li>
+            <li><a href="#">개발</a></li>
+            <li><a href="#">음악</a></li>
+          </ul>
+          <h3>팔로우하기</h3>
+          <ul class="sns">
+            <li>
+              <a href="#">
+                <img src="./assets/Facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/Twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/Instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/Github.svg" alt="GitHub" />
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="max-width">
+        <h2>©새안 블로그</h2>
+        <button class="top-button">상단으로</button>
+      </div>
+    </footer>
+  </body>
+</html>
